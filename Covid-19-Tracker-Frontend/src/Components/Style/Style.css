@@ -1,0 +1,156 @@
+:root{
+  --title-color: #0AA1DD;
+  --border-color: #F1EEE9;
+
+}
+
+h1, h2, h3, h4, p, div{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  width: 90%;
+  margin: 3% auto;
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* -------------features section------------- */
+
+.features_section{
+ display: flex;
+ justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.filter_section{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter_section select{
+  width: 35%;
+}
+
+/* ---------------search section-------------- */
+.search_section{
+  display: flex;
+ 
+}
+
+.not_found{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.active{
+  pointer-events: none;
+  opacity: .9;
+}
+.search_content{
+  margin-top: 50px;
+}
+/* -------------------global section----------------- */
+.global_section{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.global_section>div{
+  width: 30%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.global_section>div h3{
+  font-size: 16px;
+}
+.title{
+  color: var(--title-color);
+}
+
+/* ------------Table CSS------------- */
+
+.country_section{
+  margin-top: 30px;
+}
+.table{
+  height: 40vw;
+  overflow-y: auto;
+}
+
+.table_row{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid var(--border-color); */
+  border-bottom: none;
+}
+
+.table_row>p{
+  width: 25%;
+  border: 1px solid var(--border-color);
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.table_title>p {
+  border: none;
+  font-weight: bold;
+}
+
+/* --------------User profile-------------- */
+
+.user_profile{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 22px;
+  color: var(--title-color);
+  background-color: var(--border-color);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_section button{
+  background-color: transparent;
+  border: none;
+  color: var(--title-color);
+  margin-top: 5px;
+}
+
+.login_section button:hover{
+  color: tomato;
+}
+
+/* ------------country details container------------ */
+.country_details_container>div{
+  margin-top: 50px;
+}
+
+
+.country_details_container>div>div{
+  display: flex;
+  
+}
+
+.country_details_container>div>div h3{
+  width: 50%;
+line-height: 180%;
+font-size: 15px;
+}
+
+.country_details_container .country_name {
+  margin-bottom: 40px;
+  display: block;
+}
+
+
