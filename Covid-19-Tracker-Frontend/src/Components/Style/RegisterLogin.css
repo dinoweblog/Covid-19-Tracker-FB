@@ -3,7 +3,6 @@
       --border-color: #F1EEE9;
   --font_size: 17px;
   --font_color: #282c3f;
-  --hover-color: #f0f0f0;
 }
 input {
   outline: none;
@@ -15,9 +14,7 @@ input {
   overflow: hidden;
   color: var(--font_color);
 }
-.login_container {
-  height: 60vh;
-}
+
 .register_container form {
   display: flex;
   flex-direction: column;

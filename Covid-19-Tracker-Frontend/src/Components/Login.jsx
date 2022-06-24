@@ -67,7 +67,7 @@ const Login = ({ setIsOpen, setIsOpen2 }) => {
               </button>
             </div>
           </div>
-          <div className="register_container">
+          <div className="register_container login_container">
             <form onSubmit={getLogedin} className="form" action="">
               <h2>Login</h2>
 

@@ -21,7 +21,6 @@
 
 .modal {
 
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -84,70 +83,8 @@
   background: white;
 }
 
-/* ------------Address------------------ */
 
-.modal .address_input {
-  
-  height: 90%;
-  width: 100%;
-  border: none;
-  padding: 5%;
-  color: black;
-overflow-y: auto;
-  /* position: relative; */
-}
-
-.modal .address_input p {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.modal_header {
-  position: absolute;
-  background: #fff;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 8px;
-  box-shadow: 0 -1px 4px 0 #0000004d;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-/* ---------------Apply Coupon--------------- */
-.apply_coupons_centered {
-  height: 60%;
-}
-
-.coupon_code {
-  padding: 5px 10px;
-  background-color: transparent;
-  color: var(--theme-color);
-  border: 1px dashed var(--theme-color);
-  font-size: 20px;
-  border-radius: 4px;
-  margin-left: 3%;
-  margin-top: 10px;
-}
-
-.apply_coupon {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-.apply_coupon > div p {
-  padding: 0;
-  margin: 0;
-  line-height: 10px;
-  font-size: 10px;
-  margin-left: 5%;
-}
-
-.coupon_info_container {
-  margin-left: 3%;
-  margin-top: 10px;
-}
-
-/* ---------------Responsive All Product page--------------- */
+/* ---------------Responsive CSS--------------- */
 
 @media (max-width: 998px) {
   .centered {

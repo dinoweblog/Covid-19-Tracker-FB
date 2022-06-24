@@ -21,7 +21,6 @@ export const Home = () => {
   const [allCountryName, setAllCountryName] = useState([]);
   const [date, setdate] = useState("");
   const [cname, setCname] = useState("");
-  // const [profile, setprofile] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
   const dispatch = useDispatch();
@@ -42,6 +41,8 @@ export const Home = () => {
     if (cname != "" && date != "") {
       filterData();
       setActive(false);
+      setCountryName("");
+      dispatch(searchData(countryName));
     }
   }, [cname, date]);
 
@@ -102,9 +103,10 @@ export const Home = () => {
               setdate("");
               setActive(true);
               setCountryName("");
+              dispatch(searchData(countryName));
             }}
           >
-            <RiHome2Line style={{ fontSize: "25px" }} />
+            <RiHome2Line style={{ fontSize: "22px" }} />
           </Link>
         </div>
         <div className="login_section">

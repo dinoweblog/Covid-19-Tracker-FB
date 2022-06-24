@@ -18,11 +18,13 @@ export const searchError = () => ({
 export const searchData = (countryName) => (dispatch) => {
   dispatch(searchLoading());
   fetch(
-    `https://api.covid19api.com/country/${countryName}/status/confirmed?from=2021-03-01T00:00:00Z&to=2021-04-01T00:00:00Z`
+    `https://api.covid19api.com/country/${countryName}/status/confirmed?from=2022-05-20T00:00:00Z&to=2022-06-18T00:00:00Z`
   )
     .then((res) => res.json())
     .then((res) => {
-      dispatch(searchSuccess(res));
+      res.message === "Not Found"
+        ? dispatch(searchSuccess([]))
+        : dispatch(searchSuccess(res));
     })
     .catch((error) => console.log(error));
 };
